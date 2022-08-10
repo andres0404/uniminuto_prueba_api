@@ -8,7 +8,6 @@
 /vendor/laravel
 /vendor/mockery
 /vendor/monolog
-/vendor/myclabs
 /vendor/nesbot
 /vendor/phar-io
 /vendor/phpdocumentor
