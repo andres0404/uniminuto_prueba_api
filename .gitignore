@@ -1,6 +1,5 @@
 /vendor/bin
 /vendor/brick
-/vendor/composer
 /vendor/doctrine
 /vendor/dragonmantank
 /vendor/egulias
