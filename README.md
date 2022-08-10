@@ -1,3 +1,34 @@
+# SQL Para uso de la prueba
+```
+-- Adminer 4.7.1 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `empleados`;
+CREATE TABLE `empleados` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `idfr` bigint(20) DEFAULT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  `lastname` varchar(30) DEFAULT NULL,
+  `email` varchar(30) NOT NULL,
+  `earn` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `empleados` (`id`, `idfr`, `name`, `lastname`, `email`, `earn`) VALUES
+(14,	1660165427741,	'sofia master',	'Hilton',	'elandrew@hotmail.com',	30000),
+(16,	1660165479768,	'Soterraneo',	'Prinio',	'prin@d.com',	30000);
+```
+## Ejecutar el servidor
+```
+php -S localhost:8001 -t public
+```
+El front estará apuntando a ese puerto
+
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
