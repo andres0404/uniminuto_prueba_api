@@ -18,7 +18,7 @@ $router->get("/empleados", "EmpleadosController@getEmpleados");
 
 $router->post("/empleados", "EmpleadosController@setEmpleado");
 
-$router->delete("/empleados/delete/{id}","EmpleadosController@deleteEmpleado");
+$router->get("/empleados/delete/{id}","EmpleadosController@deleteEmpleado");
 
 
 
