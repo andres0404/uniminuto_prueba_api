@@ -14,3 +14,12 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+$router->get("/empleados", "EmpleadosController@getEmpleados");
+
+$router->post("/empleados", "EmpleadosController@setEmpleado");
+
+$router->delete("/empleados/delete/{id}","EmpleadosController@deleteEmpleado");
+
+
+
+
